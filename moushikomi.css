@@ -7,7 +7,9 @@ html ,body {
 
 
 body{
-    flex-direction: column;
+  display: flex;  
+  flex-direction: column;
+    
 }
 
 #backgroundContainer {
@@ -16,28 +18,46 @@ body{
     min-height: 100%;
     background-image: url(./img/shinmichidouri.avif);
     background-size: cover;
-    overflow: hidden; /* Add this if you want a scrollbar for the body specifically, but it's often redundant with the html scrollbar. */}
+    overflow: hidden; /* Add this if you want a scrollbar for the body specifically, but it's often redundant with the html scrollbar. */
+  }
 
 .glass {
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
-    width: 80%;
+    width: 20%;
     height: 80%;
     border-radius: 20px;
     padding: 20px;
     display: flex;
     flex-direction: column;
+    
+    
   }
 
   .textboxContainer {
 display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: center;
-  }
+justify-content: center;
+
+}
+
+.centered {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full height of the viewport */
+}
 
   
 footer {
     margin-top: auto;
+  }
+
+  form{
+    display: flex;
+    gap: 2vh;
+    flex-direction: column;
   }
