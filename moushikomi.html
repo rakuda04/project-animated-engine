@@ -12,29 +12,95 @@
 <body>
 <div id="backgroundContainer">
   <div class="centered">
-<div class="glass">
   <form>
-    
-    <div class="textboxContainer">
-<label for="firstName">First Name</label>
-<input type="text" id="firstName" name="firstName"></input>
-</div>
-<div class="textboxContainer">
-<label for="LastName">Last Name</label>
-<input type="text" id="LastName" name="LastName"></input>
-</div>
+    <div class="textBoxContainer">
+    <div class="box">
+      <div class="input__wrapper">
+          <input 
+              id="FirstName" 
+              type="text" 
+              name="FirstName" 
+              placeholder="Your First Name"  
+              title=" At least 3 Alphabet letters " 
+              pattern="^[A-Za-z]+(([',. -][A-Za-z ])?[A-Za-z]*)*$"
+              required class="input__field"
+          >
+          <label for="FirstName" class="input__label">
+              First Name 
+          </label>
+          <img 
+              alt="Eye Icon" title="Eye Icon" 
+              src="./svgs/user-alt-1-svgrepo-com.svg" class="input__icon"
+          >
+      </div>
+    </div>
 
+    <div class="box">
+      <div class="input__wrapper">
+          <input 
+              id="LastName" 
+              type="text" 
+              name="LastName" 
+              placeholder="Your Last Name"  
+              title=" At least 3 Alphabet letters " 
+              pattern="^[A-Za-z]+(([',. -][A-Za-z ])?[A-Za-z]*)*$"
+              required class="input__field"
+          >
+          <label for="LastName" class="input__label">
+              Last Name 
+          </label>
+          <img 
+              alt="User Icon" title="User Icon" 
+              src="./svgs/user-alt-1-svgrepo-com.svg" class="input__icon"
+          >
+      </div>
+    </div>
+  </div>
 
-<div class="textboxContainer">
-<label for="Email">Email</label>
-<input type="email" id="Email" name="Email"></input>
+  <div class="textBoxContainer">
+    <div class="box">
+      <div class="input__wrapper">
+          <input 
+              id="Email" 
+              type="email" 
+              name="Email" 
+              placeholder="Your Email Address"  
+              title="user@email.com " 
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+              "
+              required class="input__field"
+          >
+          <label for="Email" class="input__label">
+              Email 
+          </label>
+          <img 
+              alt="User Icon" title="User Icon" 
+              src="./svgs/mail-alt-svgrepo-com.svg" class="input__icon"
+          >
+      </div>
+    </div>
+
+<div class="box">
+  <div class="input__wrapper">
+      <input 
+          id="password" 
+          type="password" 
+          name="password" 
+          placeholder="Your Password" 
+          title="Minimum 6 characters at least 1 Alphabet and 1 Number" 
+          pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+          required class="input__field"
+      >
+      <label for="password" class="input__label">
+          Password
+      </label>
+      <img 
+          alt="Eye Icon" title="Eye Icon" 
+          src="./svgs/eye.svg" class="input__icon"
+      >
+  </div>
 </div>
-
-<div class="textboxContainer">
-<label for="Password">Password </label>
-<input type="text" id="Password" name="Password"></input>
 </div>
-
   </form>
   </div>
 </div>
@@ -46,8 +112,9 @@
 </html>
 
 
-
  <!-- add shimarin logo -->
  <!-- style with fonts and css the textboxContainer -->
- <!-- add svg -->
  <!-- idk if js but add logic to the textboxes so it displays alt box if incorrect -->
+ <!-- add signup bottons -->
+ 
+ <!-- add footer -->
