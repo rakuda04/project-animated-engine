@@ -1,25 +1,188 @@
-html, body {
+html ,body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    overflow: scroll;  /* Prevent scrollbars */
-}
-
-.background-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;     /* Center the image */
-    justify-content: center;
-    align-items: center;
-}
-
-.background-image {
-    min-width: 600px;
-    max-width: 1200px;
-    width: 100%;
-    height: auto;    /* Keep aspect ratio */
 }
 
 
+body{
+  display: flex;  
+  flex-direction: column;
+    
+}
 
+#backgroundContainer {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    height: 1325px;
+    width: 973px;
+    /* 973x1325 */
+    background-image: url(./img/shinmichidouri.avif);
+    background-size: cover;
+    overflow: hidden; /* Add this if you want a scrollbar for the body specifically, but it's often redundant with the html scrollbar. */
+  }
+
+.glass {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 20%;
+    height: 80%;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px; /* or adjust as needed */
+
+}
+
+.img-responsive{
+  border-radius: 50px;
+}
+
+#PageContainer {
+display: flex;
+flex-direction: column;
+gap: 2px;
+}
+
+  .textBoxContainer {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+gap: 150px;
+
+}
+
+.centered {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full height of the viewport */
+  flex-direction: column;
+  position: relative; /* Add this line */
+}
+
+  
+footer {
+    margin-top: auto;
+  }
+
+  form{
+    display: flex;
+    gap: 12vh;
+    flex-direction: column;
+  }
+
+  
+
+:root {
+  --background: #1F2336;
+  --box-background: #313852;
+  --secondary: #F1F1F1;
+  --primary: #F4BD50;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  background-color: var(--background);
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  background-color: var(
+    --box-background);
+  padding: 24px;
+  max-width: fit-content;
+  width: 100%;
+  padding-top: 12px;
+  border-radius: 16px;
+}
+
+.box h2 {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.input__wrapper {
+  position: relative;
+  padding: 15px 0 0;
+}
+
+.input__field {
+  outline: 1.5px solid var(
+    --secondary);
+  font-size: 1rem;
+  border-radius: 8px;
+  color: var(--secondary);
+  padding: 8px;
+  border: none;
+  padding-right: 32px;
+  background: transparent;
+  transition: all 0.2s;
+}
+
+.input__field::placeholder {
+  color: transparent;
+}
+
+.input__field:placeholder-shown
+~.input__label {
+  font-size: 1rem;
+  cursor: text;
+  color: var(--secondary);
+  top: 24px;
+}
+
+label,
+.input__field:focus~.input__label {
+  position: absolute;
+  top: 6px;
+  padding: 0 4px;
+  background-color: var(
+    --box-background);
+  display: block;
+  font-size: 14px;
+  left: 8px;
+  color: var(--secondary);
+  transition: 0.3s;
+}
+
+.input__field:focus~.input__label {
+  color: var(--primary);
+}
+
+.input__field:focus {
+  outline: 1.5px solid var(--primary);
+}
+
+.input__icon {
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  width: 28px;
+  height: 28px;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  cursor: pointer;
+}

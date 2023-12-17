@@ -6,12 +6,121 @@
   <title>秘密サイト</title>
   <script src="./moushikomi.js" defer></script>
   <link rel="stylesheet" href="./moushikomi.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
-  <div class="background-container">
-    <img src="./img/shinmichidouri.avif" alt="Background Image" class="background-image">
-</div>
+<div id="backgroundContainer">
+  <div class="centered">
+    <div id="PageContainer">
+    <div class="imageContainer">
+    <img src="./img/shimarin.png" class="img-responsive" alt="shimarin">
+    <h1>shimarin corp</h1>
+  </div>
+  <form>
+    <div class="textBoxContainer">
+    <div class="box">
+      <div class="input__wrapper">
+          <input 
+              id="FirstName" 
+              type="text" 
+              name="FirstName" 
+              placeholder="Your First Name"  
+              title=" At least 3 Alphabet letters " 
+              pattern="^[A-Za-z]+(([',. -][A-Za-z ])?[A-Za-z]*)*$"
+              required class="input__field"
+          >
+          <label for="FirstName" class="input__label">
+              First Name 
+          </label>
+          <img 
+              alt="Eye Icon" title="Eye Icon" 
+              src="./svgs/user-alt-1-svgrepo-com.svg" class="input__icon"
+          >
+      </div>
+    </div>
 
+    <div class="box">
+      <div class="input__wrapper">
+          <input 
+              id="LastName" 
+              type="text" 
+              name="LastName" 
+              placeholder="Your Last Name"  
+              title=" At least 3 Alphabet letters " 
+              pattern="^[A-Za-z]+(([',. -][A-Za-z ])?[A-Za-z]*)*$"
+              required class="input__field"
+          >
+          <label for="LastName" class="input__label">
+              Last Name 
+          </label>
+          <img 
+              alt="User Icon" title="User Icon" 
+              src="./svgs/user-alt-1-svgrepo-com.svg" class="input__icon"
+          >
+      </div>
+    </div>
+  </div>
+
+  <div class="textBoxContainer">
+    <div class="box">
+      <div class="input__wrapper">
+          <input 
+              id="Email" 
+              type="email" 
+              name="Email" 
+              placeholder="Your Email Address"  
+              title="user@email.com " 
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+              "
+              required class="input__field"
+          >
+          <label for="Email" class="input__label">
+              Email 
+          </label>
+          <img 
+              alt="User Icon" title="User Icon" 
+              src="./svgs/mail-alt-svgrepo-com.svg" class="input__icon"
+          >
+      </div>
+    </div>
+
+<div class="box">
+  <div class="input__wrapper">
+      <input 
+          id="password" 
+          type="password" 
+          name="password" 
+          placeholder="Your Password" 
+          title="Minimum 6 characters at least 1 Alphabet and 1 Number" 
+          pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$"
+          required class="input__field"
+      >
+      <label for="password" class="input__label">
+          Password
+      </label>
+      <img 
+          alt="Eye Icon" title="Eye Icon" 
+          src="./svgs/eye.svg" class="input__icon"
+      >
+  </div>
+</div>
+</div>
+  </form>
+  </div>
+  
+</div>
+</div>
+<footer>
+  credit to <a href="https://unsplash.com/ja/@hiroyukisenn">hiroyuki senn</a> for the image
+</footer>
 </body>
+</html>
+
+
+ <!-- add shimarin logo -->
+ <!-- style with fonts and css the textboxContainer -->
+ <!-- idk if js but add logic to the textboxes so it displays alt box if incorrect -->
+ <!-- add signup bottons -->
+ 
+ <!-- add footer -->
