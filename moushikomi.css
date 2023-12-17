@@ -37,6 +37,24 @@ body{
     flex-direction: column;
   }
 
+.imageContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 10px; /* or adjust as needed */
+
+}
+
+.img-responsive{
+  border-radius: 50px;
+}
+
+#PageContainer {
+display: flex;
+flex-direction: column;
+gap: 2px;
+}
+
   .textBoxContainer {
 display: flex;
 flex-direction: row;
@@ -51,6 +69,8 @@ gap: 150px;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   height: 100vh; /* Full height of the viewport */
+  flex-direction: column;
+  position: relative; /* Add this line */
 }
 
   
