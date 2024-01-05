@@ -6,20 +6,27 @@
   <title>秘密サイト</title>
   <script src="./moushikomi.js" defer></script>
   <link rel="stylesheet" href="./moushikomi.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+      href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" 
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+      </style>
 </head>
 <body>
 <div id="backgroundContainer">
   <div class="centered">
     <div id="PageContainer">
-    <div class="imageContainer">
+    <div class="imageContainer animate hidden">
     <img src="./img/shimarin.png" class="img-responsive" alt="shimarin">
-    <h1>shimarin corp</h1>
+    <h1>しまリン 社</h1> 
   </div>
   <form>
     <div class="textBoxContainer">
-    <div class="box">
+    <div class="box animate hidden">
       <div class="input__wrapper">
           <input 
               id="FirstName" 
@@ -34,13 +41,13 @@
               First Name 
           </label>
           <img 
-              alt="Eye Icon" title="Eye Icon" 
-              src="./svgs/user-alt-1-svgrepo-com.svg" class="input__icon"
+              alt="FirstName" title="FirstName" 
+              src="./svgs/person.svg" class="input__icon"
           >
       </div>
     </div>
 
-    <div class="box">
+    <div class="box animate hidden">
       <div class="input__wrapper">
           <input 
               id="LastName" 
@@ -56,14 +63,14 @@
           </label>
           <img 
               alt="User Icon" title="User Icon" 
-              src="./svgs/user-alt-1-svgrepo-com.svg" class="input__icon"
+              src="./svgs/person.svg" class="input__icon"
           >
       </div>
     </div>
   </div>
 
-  <div class="textBoxContainer">
-    <div class="box">
+  <div class="textBoxContainer ">
+    <div class="box animate hidden">
       <div class="input__wrapper">
           <input 
               id="Email" 
@@ -71,9 +78,9 @@
               name="Email" 
               placeholder="Your Email Address"  
               title="user@email.com " 
-              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
-              "
-              required class="input__field"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              required 
+              class="input__field"
           >
           <label for="Email" class="input__label">
               Email 
@@ -85,7 +92,7 @@
       </div>
     </div>
 
-<div class="box">
+<div class="box animate hidden">
   <div class="input__wrapper">
       <input 
           id="password" 
@@ -106,7 +113,10 @@
   </div>
 </div>
 </div>
-  </form>
+<div class="textBoxContainer hidden animate">
+  <button class="SignUpButton "><span>Sign Up</span></button>
+</div>  
+</form>
   </div>
   
 </div>
@@ -118,9 +128,5 @@
 </html>
 
 
- <!-- add shimarin logo -->
- <!-- style with fonts and css the textboxContainer -->
- <!-- idk if js but add logic to the textboxes so it displays alt box if incorrect -->
- <!-- add signup bottons -->
- 
- <!-- add footer -->
+
+ <!-- move footer -->
