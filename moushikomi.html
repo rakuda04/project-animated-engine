@@ -20,13 +20,13 @@
 <div id="backgroundContainer">
   <div class="centered">
     <div id="PageContainer">
-    <div class="imageContainer">
+    <div class="imageContainer animate hidden">
     <img src="./img/shimarin.png" class="img-responsive" alt="shimarin">
     <h1>しまリン 社</h1> 
   </div>
   <form>
     <div class="textBoxContainer">
-    <div class="box">
+    <div class="box animate hidden">
       <div class="input__wrapper">
           <input 
               id="FirstName" 
@@ -47,7 +47,7 @@
       </div>
     </div>
 
-    <div class="box">
+    <div class="box animate hidden">
       <div class="input__wrapper">
           <input 
               id="LastName" 
@@ -69,8 +69,8 @@
     </div>
   </div>
 
-  <div class="textBoxContainer">
-    <div class="box">
+  <div class="textBoxContainer ">
+    <div class="box animate hidden">
       <div class="input__wrapper">
           <input 
               id="Email" 
@@ -78,9 +78,9 @@
               name="Email" 
               placeholder="Your Email Address"  
               title="user@email.com " 
-              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
-              "
-              required class="input__field"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              required 
+              class="input__field"
           >
           <label for="Email" class="input__label">
               Email 
@@ -92,7 +92,7 @@
       </div>
     </div>
 
-<div class="box">
+<div class="box animate hidden">
   <div class="input__wrapper">
       <input 
           id="password" 
@@ -113,8 +113,8 @@
   </div>
 </div>
 </div>
-<div class="textBoxContainer">
-  <button class="SignUpButton"><span>Sign Up</span></button>
+<div class="textBoxContainer hidden animate">
+  <button class="SignUpButton "><span>Sign Up</span></button>
 </div>  
 </form>
   </div>
@@ -128,6 +128,5 @@
 </html>
 
 
- <!-- add animation of each texbox entering the background -->
- <!-- add hover effect to shimarin -->
+
  <!-- move footer -->
